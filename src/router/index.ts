@@ -1,9 +1,9 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
-import HomePage from '@/components/HomePage.vue'
-import AboutUs from '@/components/AboutUs.vue'
-import AppCalc from '@/components/AppCalc.vue'
-import FormList from '@/components/FormList.vue'
-import OpenFormButton from '@/components/OpenFormButton.vue'
+import HomePage from '@/components/Header/HomePage.vue'
+import AppCalculator from '@/components/Assignments_1_2/AppCalculator.vue'
+import Form_Table from '@/components/Assignments_1_2/Form_Table.vue'
+import PropParent from '@/components/Props/PropParent.vue'
+import EmitsParent from '@/components/Emits/EmitsParent.vue'
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
@@ -11,20 +11,28 @@ const routes: Array<RouteRecordRaw> = [
     component: HomePage
   },
   {
-    path: '/about',
-    name: 'about',
-    component: AboutUs
-  },
-  {
     path: '/calc',
     name: 'calc',
-    component: AppCalc
+    component: AppCalculator
   },
   {
-    path: '/form-list',
-    name: 'form-list',
-    component: FormList
+    path: '/form-table',
+    name: 'form-table',
+    component: Form_Table
   },
+
+  {
+    path: '/props',
+    name: 'props',
+    component: PropParent
+  },
+ 
+  {
+    path: '/emits',
+    name: 'emits',
+    component: EmitsParent
+  },
+
 ]
 
 const router = createRouter({
