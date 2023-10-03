@@ -4,6 +4,12 @@ import AppCalculator from '@/components/Assignments_1_2/AppCalculator.vue'
 import Form_Table from '@/components/Assignments_1_2/Form_Table.vue'
 import PropParent from '@/components/Props/PropParent.vue'
 import EmitsParent from '@/components/Emits/EmitsParent.vue'
+import AppSlots from '@/components/Slots/AppSlots.vue'
+import AppMadhu from '@/components/Slots/AppMadhu.vue'
+import AppSanju from '@/components/Slots/AppSanju.vue'
+
+import SlotLayout from '@/components/Slots/SlotLayout.vue'
+
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
@@ -32,7 +38,27 @@ const routes: Array<RouteRecordRaw> = [
     name: 'emits',
     component: EmitsParent
   },
-
+  {
+    path: '/slots',
+    name: 'slots',
+    component: AppSlots
+  },
+  {
+    path: '/madhu',
+    name: 'madhu',
+    component: AppMadhu
+  },
+  {
+    path: '/sanju',
+    name: 'sanju',
+    component: AppSanju
+  },
+  {
+    path: '/layout',
+    name: 'layout',
+    component: SlotLayout
+  },
+  
 ]
 
 const router = createRouter({

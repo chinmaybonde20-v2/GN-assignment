@@ -55,7 +55,11 @@
         Provide & Inject : Sibling components send data
       </router-link>
     </div>
+    <div class="button-container">
+    <router-link to="/slots" class="router-link"> Slots </router-link>
   </div>
+  </div>
+ 
 </template>
 /props'
 <style scoped>
